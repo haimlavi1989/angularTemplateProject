@@ -22,7 +22,7 @@
             <a class="nav-link" routerLink="/users" routerLinkActive="active">
               users
             </a>
-            <div *ngIf="usersLength">
+            <div *ngIf="usersLength$ | async as usersLength">
               <span
                 class="badge bg-danger"
                 style="
